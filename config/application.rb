@@ -24,6 +24,6 @@ module TimeToAnswer
     # -- all .rb files in that directory are automatically loaded.
 
     # Don't generate system test files.
-    config.generators.system_tests = nill
+    config.generators.system_tests = nil
   end
 end
