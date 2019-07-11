@@ -7,7 +7,6 @@
       user:
         one: Usuário
         other: Usuários
-      user: Dude
     attributes:
       admin:
         id: Código
