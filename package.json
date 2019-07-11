@@ -1,0 +1,8 @@
+{
+  "name": "time_to_answer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jeova-Sampaio/Time-to-Answer.git",
+  "author": "Jeova-Sampaio <jeova_samp@hotmail.com>",
+  "license": "MIT"
+}
