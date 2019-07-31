@@ -4,8 +4,19 @@
 Rails.application.config.assets.version = '1.0'
 
 # Add additional assets to the asset load path
-# Rails.application.config.assets.paths << Emoji.images_path
+Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
+
+# /app/assets
+Rails.application.config.assets.precompile += %w( admins_backoffice.css 
+                                                  admins_backoffice.js )
+
+# /lib/assets
+Rails.application.config.assets.precompile += %w( font-Admin.css 
+                                                  sb-admin-2.css
+                                                  sb-admin-2.js )
+
+# /vendor/assets
+Rails.application.config.assets.precompile += %w( bootstrap-4.3.1/js/bootstrap.js )

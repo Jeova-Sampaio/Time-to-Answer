@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/Jeova-Sampaio/Time-to-Answer.git",
   "author": "Jeova-Sampaio <jeova_samp@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.9.0",
+    "jquery": "3.4.1",
+    "jquery.easing": "1.4.1"
+  }
 }
