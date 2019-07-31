@@ -11,12 +11,18 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # /app/assets
 Rails.application.config.assets.precompile += %w( admins_backoffice.css 
-                                                  admins_backoffice.js )
+                                                  admins_backoffice.js
+                                                  users_backoffice.css
+                                                  users_backoffice.js )
 
 # /lib/assets
 Rails.application.config.assets.precompile += %w( font-Admin.css 
                                                   sb-admin-2.css
-                                                  sb-admin-2.js )
+                                                  sb-admin-2.js
+                                                  custom.css
+                                                  custom.js )
 
 # /vendor/assets
-Rails.application.config.assets.precompile += %w( bootstrap-4.3.1/js/bootstrap.js )
+Rails.application.config.assets.precompile += %w( bootstrap-4.3.1/js/bootstrap.js
+                                                  font-awesome/css/font-awesome.css
+                                                  jquery-2.2.3/dist/jquery.js )
