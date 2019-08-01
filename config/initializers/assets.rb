@@ -20,7 +20,8 @@ Rails.application.config.assets.precompile += %w( font-Admin.css
                                                   sb-admin-2.css
                                                   sb-admin-2.js
                                                   custom.css
-                                                  custom.js )
+                                                  custom.js
+                                                  img.jpg )
 
 # /vendor/assets
 Rails.application.config.assets.precompile += %w( bootstrap-4.3.1/js/bootstrap.js
