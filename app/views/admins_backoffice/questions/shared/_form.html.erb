@@ -9,23 +9,28 @@
         <div class="panel panel-default">
             
             <div class="panel-body">
-                <% if @subject.errors.any? %>
+                <% if @question.errors.any? %>
                     <div class="alert alert-danger alert-dismissable">
                         <button type="buttton" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                         <ul>
-                            <% @subject.errors.full_messages.each do |message| %>
+                            <% @question.errors.full_messages.each do |message| %>
                             <li><%= message %></li>
                             <% end %>
                         </ul>
                     </div>
                     <% end %>
-                    <h1><%= "#{action_message} assunto/área" %></h1>
+                    <h1><%= "#{action_message} pergunta" %></h1>
                 <div class="row">
                     <div class="col-lg-6">
-                        <%= form_for([ :admins_backoffice, @subject ], local: true) do |f| %>
+                        <%= form_for([ :admins_backoffice, @question ], local: true) do |f| %>
                             <div class="form-group">
                                 <%= f.label :description %>
-                                <%= f.text_field :description, class:"form-control", placeholder:"Descrição do assunto/área" %>
+                                <%= f.text_area :description, class:"form-control", placeholder:"Descrição da pergunta..." %>
+                            </div>
+
+                            <div class="form-group">
+                                <%= f.label :subject_id %>
+                                <%= f.collection_select(:subject_id, Subject.all, :id, :description, {}, {class:"form-control"}) %>
                             </div>
                             <button type="submit" class="btn btn-primary">Salvar</button>
                         <% end %>
