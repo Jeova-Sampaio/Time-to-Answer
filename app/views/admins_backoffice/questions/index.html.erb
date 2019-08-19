@@ -11,17 +11,17 @@
                   <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" 
                       colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" 
                       style="width: 20px;">
-                      Código ID
+                      #
                     </th>
                   <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" 
                       colspan="1" aria-label="Position: activate to sort column ascending" 
                       style="width: 478px;">
-                      Descrição
+                      <%= translate_attribute(@questions, :description) %>
                   </th>
                   <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" 
                       colspan="1" aria-label="Position: activate to sort column ascending" 
                       style="width: 200px;">
-                      Assunto
+                      <%= translate_attribute(@questions, :subject) %>
                   </th>
                   <th>
                     <%= link_to new_admins_backoffice_question_path, class:"btn btn-success btn-circle" do %>

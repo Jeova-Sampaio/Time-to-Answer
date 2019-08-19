@@ -11,12 +11,12 @@
                   <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" 
                       colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" 
                       style="width: 20px;">
-                      Código ID
+                      #
                     </th>
                   <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" 
                       colspan="1" aria-label="Position: activate to sort column ascending" 
                       style="width: 478px;">
-                      Email
+                      <%= translate_attribute(@admins, :email) %>
                   </th>
                   <th>
                     <%= link_to new_admins_backoffice_admin_path, class:"btn btn-success btn-circle" do %>
