@@ -34,7 +34,7 @@
                                 <%= f.label :subject_id %>
                                 <%= f.collection_select(:subject_id, @subjects, :id, :description, {}, {class:"form-control"}) %>
                             </div>
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-default">
                                 <%= t('buttons.save') %>
                             </button>
                         <% end %>
