@@ -17,7 +17,9 @@ Rails.application.config.assets.precompile += %w( admins_backoffice.css
                                                   admin_devise.css
                                                   admin_devise.js
                                                   user_devise.css
-                                                  user_devise.js )
+                                                  user_devise.js
+                                                  site.js
+                                                  site.css )
 
 # /lib/assets
 Rails.application.config.assets.precompile += %w( font-Admin.css 
@@ -25,7 +27,10 @@ Rails.application.config.assets.precompile += %w( font-Admin.css
                                                   sb-admin-2.js
                                                   custom.css
                                                   custom.js
-                                                  img.jpg )
+                                                  img.jpg
+                                                  surface-fix.css
+                                                  surface-fix.js
+                                                  navbar.css )
 
 # /vendor/assets
 Rails.application.config.assets.precompile += %w( bootstrap-4.3.1/js/bootstrap.js
