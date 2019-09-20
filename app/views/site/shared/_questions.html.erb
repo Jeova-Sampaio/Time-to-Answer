@@ -9,7 +9,7 @@
 
 
 <% @questions.each do |question| %>
-    <%= form_tag(site_answer_path, local: true) do %>
+    <%= form_tag(site_answer_path, remote: true) do %>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title"><%= question.description %></h3>
