@@ -1,10 +1,6 @@
 <!-- Main component for a primary marketing message or call to action -->
 <div class="jumbotron">
-  <% unless params[:term] %>
-    <h3>Últimas perguntas cadastradas...</h3>
-  <% else %>
-    <h3><%= "Resultados para o termo \"#{params[:term]}\"..." %></h3>
-  <% end %>
+  <h3><%= msg_jumbotron %></h3>
 </div>
 
 
@@ -12,7 +8,12 @@
     <%= form_tag(site_answer_path, remote: true) do %>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><%= question.description %></h3>
+        <h3 class="panel-title">
+          <span class="label label-info" style="margin: 10px;">
+            <%= link_to question.subject.description, site_search_subject_path(question.subject_id, question.subject.description), style:"color: white" %>
+          </span>
+          <%= question.description %>
+        </h3>
       </div>
       <div class="panel-body">
         <ul>
